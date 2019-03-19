@@ -38,7 +38,11 @@ Input Files:
 $(SRCROOT)/Carthage/Build/iOS/DebugWindow.framework
 
 Output Files:
-$(BUILD_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DebugWindow.framework
+$(BUILD\_PRODUCTS\_DIR)/$(FRAMEWORKS\_FOLDER\_PATH)/DebugWindow.framework
+
+**Build Settings**
+Specificy in Xcode->Build Settings the value for Framework Search Paths as the path to the input:
+$(SRCROOT)/Carthage/Build/iOS/
 
 **Verifying A Build Does Not Include DebugWindow**
 Note: This only works if you are using DebugWindow Frameworks. If you are using Cocoapods ensure that you have specified "use_frameworks!".
