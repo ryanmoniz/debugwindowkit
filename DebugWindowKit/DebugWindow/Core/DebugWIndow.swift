@@ -1,6 +1,6 @@
 //
 //  DebugWindow.swift
-//  DebugWindow
+//  DebugWindowKit
 //
 //  Created by Ryan Moniz on 1/2/19.
 //  Copyright © 2019 Ryan Moniz. All rights reserved.

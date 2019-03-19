@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import DebugWindow
+@testable import DebugWindowKit
 
 class DebugWindowTests: XCTestCase {
 

@@ -1,6 +1,6 @@
 //
 //  LocalizationSystem.swift
-//  DebugWindow
+//  DebugWindowKit
 //
 //  Created by Ryan Moniz on 3/5/19.
 //  Copyright © 2019 Ryan Moniz. All rights reserved.

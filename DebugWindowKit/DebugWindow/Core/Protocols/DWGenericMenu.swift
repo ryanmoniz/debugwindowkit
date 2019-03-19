@@ -1,6 +1,6 @@
 //
 //  DWGenericMenu.swift
-//  DebugWindow
+//  DebugWindowKit
 //
 //  Created by Ryan Moniz on 1/30/19.
 //  Copyright © 2019 Ryan Moniz. All rights reserved.

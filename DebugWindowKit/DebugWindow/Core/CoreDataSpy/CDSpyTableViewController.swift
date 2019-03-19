@@ -1,6 +1,6 @@
 //
 //  CDSpyTableViewController.swift
-//  DebugWindow
+//  DebugWindowKit
 //
 //  Created by Ryan Moniz on 3/15/19.
 //  Copyright © 2019 Ryan Moniz. All rights reserved.

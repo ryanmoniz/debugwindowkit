@@ -1,6 +1,6 @@
 //
 //  DebugTableViewController.swift
-//  DebugWindow
+//  DebugWindowKit
 //
 //  Created by Ryan Moniz on 1/2/19.
 //  Copyright © 2019 Ryan Moniz. All rights reserved.
@@ -51,7 +51,7 @@ class DebugTableViewController: UITableViewController {
         } else {
             //handle custom menus
             if (indexPath.row - 3 >= 0) {
-                let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindow
+                let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindowKit
                 return menu.cellFor(tableView: tableView)
             } else {
                 NSLog("something funny going on....")
@@ -83,7 +83,7 @@ class DebugTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         if (indexPath.row >= 3) {
             //custom menu
-            let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindow
+            let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindowKit
             guard let navController = self.navigationController else {
                 NSLog("no navigation controller???")
                 return
