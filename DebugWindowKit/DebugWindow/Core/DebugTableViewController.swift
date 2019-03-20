@@ -7,6 +7,16 @@
 //
 
 import UIKit
+import FileBrowser
+
+fileprivate struct DWTableIndex {
+    static let LiveLogsIndex = 0
+    static let CoreDataIndex = 1
+    static let LocalizationIndex = 2
+    static let FileBrowser = 3
+}
+
+fileprivate let DWDefaultsCount = 4
 
 class DebugTableViewController: UITableViewController {
     var _menuItems = [DWGenericMenu]()
@@ -35,23 +45,27 @@ class DebugTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 + _menuItems.count
+        return DWDefaultsCount + _menuItems.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        if indexPath.row == DWTableIndex.LiveLogsIndex {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LiveLogsIdentifier", for: indexPath)
             return cell
-        } else if indexPath.row == 1 {
+        } else if indexPath.row == DWTableIndex.CoreDataIndex {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CoreDataIdentifier", for: indexPath)
             return cell
-        } else if indexPath.row == 2 {
+        } else if indexPath.row == DWTableIndex.LocalizationIndex {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LocalizationIdentifier", for: indexPath)
             return cell
-        } else {
+        } else if indexPath.row == DWTableIndex.FileBrowser {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FileBrowserIdentifier", for: indexPath)
+            return cell
+        }
+        else {
             //handle custom menus
-            if (indexPath.row - 3 >= 0) {
-                let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindowKit
+            if (indexPath.row - DWDefaultsCount >= 0) {
+                let menu = self._menuItems[indexPath.row - DWDefaultsCount] //DWDefaultsCount is the default number of options that ship with DebugWindowKit
                 return menu.cellFor(tableView: tableView)
             } else {
                 NSLog("something funny going on....")
@@ -81,60 +95,26 @@ class DebugTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if (indexPath.row >= 3) {
+        if (indexPath.row >= DWDefaultsCount) {
             //custom menu
-            let menu = self._menuItems[indexPath.row - 3] //3 is the default number of options that ship with DebugWindowKit
+            let menu = self._menuItems[indexPath.row - DWDefaultsCount] //DWDefaultsCount is the default number of options that ship with DebugWindowKit
             guard let navController = self.navigationController else {
                 NSLog("no navigation controller???")
                 return
             }
             menu.didSelectRowAt(navigationController: navController)
+        } else {
+            if indexPath.row == DWTableIndex.FileBrowser {
+                if let str = NSSearchPathForDirectoriesInDomains(.applicationDirectory,
+                                                              .userDomainMask,
+                                                              true).first {
+                    
+                    let url = URL(string: (str as NSString).deletingLastPathComponent)
+                    let browser = FileBrowser(initialPath: url)
+                    self.present(browser, animated: true, completion: nil)
+                }
+                
+            }
         }
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

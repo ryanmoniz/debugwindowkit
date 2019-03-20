@@ -25,6 +25,7 @@
 		523FFC882240327D00832F4D /* DebugWIndow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FFC782240327D00832F4D /* DebugWIndow.swift */; };
 		523FFC892240327D00832F4D /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FFC792240327D00832F4D /* SlideInPresentationController.swift */; };
 		523FFC8A2240327D00832F4D /* DWGenericMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FFC7B2240327D00832F4D /* DWGenericMenu.swift */; };
+		52D4EDBE2242D7B1002511CD /* FileBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D4EDBD2242D7B1002511CD /* FileBrowser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		523FFC782240327D00832F4D /* DebugWIndow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugWIndow.swift; sourceTree = "<group>"; };
 		523FFC792240327D00832F4D /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 		523FFC7B2240327D00832F4D /* DWGenericMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWGenericMenu.swift; sourceTree = "<group>"; };
+		52D4EDBD2242D7B1002511CD /* FileBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FileBrowser.framework; path = ../Carthage/Build/iOS/FileBrowser.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D4EDBE2242D7B1002511CD /* FileBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 				523FFC50224031C600832F4D /* DebugWindow */,
 				523FFC5B224031C600832F4D /* DebugWindowTests */,
 				523FFC4F224031C600832F4D /* Products */,
+				52D4EDBA2242D73E002511CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +140,6 @@
 		523FFC6A2240327D00832F4D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				523FFC6B2240327D00832F4D /* DWCoreDataSpy.storyboard */,
 				523FFC6C2240327D00832F4D /* DWLiveLogs.storyboard */,
 				523FFC6D2240327D00832F4D /* DebugTableViewController.storyboard */,
 			);
@@ -156,6 +159,7 @@
 		523FFC742240327D00832F4D /* CoreDataSpy */ = {
 			isa = PBXGroup;
 			children = (
+				523FFC6B2240327D00832F4D /* DWCoreDataSpy.storyboard */,
 				523FFC752240327D00832F4D /* CDSpyTableViewController.swift */,
 				523FFC762240327D00832F4D /* CDSpyEntityDetailsTableViewController.swift */,
 				523FFC772240327D00832F4D /* CDSpyEntityListTableViewController.swift */,
@@ -169,6 +173,14 @@
 				523FFC7B2240327D00832F4D /* DWGenericMenu.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		52D4EDBA2242D73E002511CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D4EDBD2242D7B1002511CD /* FileBrowser.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +459,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS\"";
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +484,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS\"";
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
