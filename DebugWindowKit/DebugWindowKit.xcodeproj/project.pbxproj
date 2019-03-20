@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521070AE2242F4C1004A8D68 /* FileBrowser.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52D4EDBD2242D7B1002511CD /* FileBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		523FFC58224031C600832F4D /* DebugWindowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523FFC4E224031C600832F4D /* DebugWindowKit.framework */; };
 		523FFC5D224031C600832F4D /* DebugWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FFC5C224031C600832F4D /* DebugWindowTests.swift */; };
 		523FFC5F224031C600832F4D /* DebugWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 523FFC51224031C600832F4D /* DebugWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +38,19 @@
 			remoteInfo = DebugWindow;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		521070AD2242F4B9004A8D68 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				521070AE2242F4C1004A8D68 /* FileBrowser.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		523FFC4E224031C600832F4D /* DebugWindowKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DebugWindowKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +219,7 @@
 				523FFC4A224031C600832F4D /* Sources */,
 				523FFC4B224031C600832F4D /* Frameworks */,
 				523FFC4C224031C600832F4D /* Resources */,
+				521070AD2242F4B9004A8D68 /* CopyFiles */,
 			);
 			buildRules = (
 			);
