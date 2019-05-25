@@ -1,4 +1,0 @@
-framework module DebugWindowKit {
-  header "DebugWindowKit-Swift.h"
-  requires objc
-}
