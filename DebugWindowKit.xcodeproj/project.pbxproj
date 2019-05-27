@@ -460,6 +460,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -517,6 +518,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -537,7 +539,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -572,7 +573,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -687,6 +687,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -706,7 +707,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -804,6 +804,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -823,7 +824,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -921,6 +921,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -940,7 +941,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1038,6 +1038,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1057,7 +1058,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1155,6 +1155,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1174,7 +1175,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1265,6 +1265,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1285,7 +1286,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1375,6 +1375,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1395,7 +1396,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1485,6 +1485,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1505,7 +1506,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1595,6 +1595,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1615,7 +1616,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1705,6 +1705,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1725,7 +1726,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Carthage/Build/iOS/\"",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(SOURCE_ROOT)/../IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = DebugWindow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
