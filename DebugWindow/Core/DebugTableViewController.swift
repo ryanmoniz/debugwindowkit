@@ -18,7 +18,7 @@ fileprivate struct DWTableIndex {
     static let NetFoxIndex = 4
 }
 
-fileprivate let DWDefaultsCount = 6
+fileprivate let DWDefaultsCount = 5
 
 class DebugTableViewController: UITableViewController {
     var _menuItems = [DWGenericMenu]()
@@ -99,32 +99,30 @@ class DebugTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if (indexPath.row >= DWDefaultsCount) {
-            //custom menu
-            let menu = self._menuItems[indexPath.row - DWDefaultsCount] //DWDefaultsCount is the default number of options that ship with DebugWindowKit
-            guard let navController = self.navigationController else {
-                NSLog("no navigation controller???")
-                return
-            }
-            menu.didSelectRowAt(navigationController: navController)
-        } else {
-            if indexPath.row == DWTableIndex.NetFoxIndex {
-                NFX.sharedInstance().show()
-            }
-            if indexPath.row == DWTableIndex.FileBrowser {
-                if let str = NSSearchPathForDirectoriesInDomains(.applicationDirectory,
-                                                              .userDomainMask,
-                                                              true).first {
-                    
-                    let url = URL(string: (str as NSString).deletingLastPathComponent)
-                    let browser = FileBrowser(initialPath: url)
-                    self.present(browser, animated: true, completion: nil)
-                }
+        
+        if indexPath.row == DWTableIndex.NetFoxIndex {
+            NFX.sharedInstance().show()
+        }
+        if indexPath.row == DWTableIndex.FileBrowser {
+            if let str = NSSearchPathForDirectoriesInDomains(.applicationDirectory,
+                                                             .userDomainMask,
+                                                             true).first {
                 
+                let url = URL(string: (str as NSString).deletingLastPathComponent)
+                let browser = FileBrowser(initialPath: url)
+                self.present(browser, animated: true, completion: nil)
             }
-//            else if indexPath.row == DWTableIndex.NetworkEye {
-//
-//            }
+            
+        } else {
+            if (indexPath.row >= DWDefaultsCount) {
+                //custom menu
+                let menu = self._menuItems[indexPath.row - DWDefaultsCount] //DWDefaultsCount is the default number of options that ship with DebugWindowKit
+                guard let navController = self.navigationController else {
+                    NSLog("no navigation controller???")
+                    return
+                }
+                menu.didSelectRowAt(navigationController: navController)
+            }
         }
     }
 }
